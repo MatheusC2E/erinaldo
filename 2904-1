@@ -1,0 +1,36 @@
+public class Media {
+
+	public static void main(String[] args) {
+		float i1, i2, i3, idade;
+		
+		idade = 0;
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("informe sua idade: ");
+		i1 = sc.nextFloat();
+		
+		System.out.println("informe outra idade: ");
+		i2 = sc.nextFloat();
+		
+		System.out.println("informe outra idade: ");
+		i3 = sc.nextFloat();
+		
+		float media = (i1+i2+i3)/3;
+		String resultado;
+		
+		if(media<=0) {
+			resultado = "algo não esta certo , faça novamente";
+		}else {
+			resultado="certo";
+		}
+		
+		System.out.printf("\n A media de idade é %.1f e esta %s",media, resultado);
+		
+		sc.close();
+		}
+
+
+
+	}
+
